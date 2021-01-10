@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+        }
+        input{
+            border-radius: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .container{
+            border: 2px solid black;
+            padding: 25px;
+        }
+        label{
+            font-family: sans-serif;
+            font-size: larger;
+            font-weight: bold;
+        }
+        button{
+            color: black;
+            background-color: blanchedalmond;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: small;
+            border-radius: 5px;
+            margin-top: 25px;
+            padding: 10px;
+            height: 50px;
+            width: 100px;
+        }
+        .result-container{
+            background-image: url('/assest/rupee2.jpg');
+            background-repeat: no-repeat;
+            display: none;
+            padding: 25px;
+            margin: 0 25px;
+            text-align: center;
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+            background-position: center;
+            background-size: contain;
+        }
+        .result-container > h3 img{
+            float: left;
+        }
+        .lab-inp{
+            text-align: center;
+        }
+        span{
+            text-align: initial;
+            float: left;
+            color: white;
+            line-height: 1.8em;
+            font-weight: bolder;
+        }
+        p{
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CASH MEMO</h1>
+    <div class="container">
+        <div class="lab-inp">
+            <label for="Billed Amt">Payable amount &nbsp;&nbsp;: </label>
+            <input id="billAmt" placeholder="Payable amount"/><br>
+        </div>
+        <div class="lab-inp">
+            <label for="Currencies Given">Currencies Given : </label>
+            <input type="number" id="givenAmount" placeholder="Currencies Given"/><br>
+        </div>
+        <div class="lab-inp">
+            <button id="btn">Calculate</button>
+        </div>
+        <hr>
+
+        <div class="result-container" id="result-container">
+            <p id="result"></p>
+        </div>
+    </div><br>
+    <script src="/index.js"></script>
+</body>
+</html>
